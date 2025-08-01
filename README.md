@@ -48,3 +48,113 @@ Diseñador, arquitecto digital, estratega de sistemas descentralizados y fundado
 ## ⚖️ Licencia
 
 Este proyecto está protegido bajo una licencia de investigación cerrada. Cualquier uso, adaptación o distribución no autorizada será considerado violación de propiedad intelectual en trámite de patente.
+
+
+Diagramas para la patente A.N.G.E.L.
+
+1. Diagrama de Arquitectura General
+
+Descripción:
+Un esquema de alto nivel que muestra los principales componentes del sistema:
+
+Usuarios / dispositivos solicitantes
+
+AI Fragmentation Engine (motor de fragmentación IA)
+
+Lobbys digitales segmentados (múltiples zonas aisladas)
+
+Generador de Claves Temporales Cifradas
+
+Módulo de Reensamblaje Condicional
+
+Blockchain / Registro Inmutable
+
+Mecanismo de Revocación y Auditoría
+
+
+Objetivo:
+Visualizar cómo fluye la solicitud de acceso, la fragmentación de la red, la generación y validación de claves, y el acceso condicional a datos.
+
+
+---
+
+2. Diagrama de Flujo de Operación
+
+Descripción:
+Flujo paso a paso de la interacción entre:
+
+Inicio de la solicitud (usuario o dispositivo)
+
+Evaluación contextual por IA (identidad, comportamiento, geolocalización)
+
+Generación de clave temporal
+
+Acceso a lobby digital
+
+Reensamblaje de datos tras validación
+
+Expiración y revocación automática
+
+
+Objetivo:
+Aclarar la secuencia lógica y temporal del proceso.
+
+
+---
+
+3. Diagrama de Fragmentación y Reensamblaje de Datos
+
+Descripción:
+Representación conceptual de cómo los datos o funciones se dividen en fragmentos aislados dentro de lobbys digitales y se reensamblan únicamente cuando se valida la clave temporal.
+
+Objetivo:
+Mostrar la estrategia anti-exfiltración y control granular.
+
+
+---
+
+Anexos Técnicos
+
+A. Especificación Criptográfica
+
+Algoritmos propuestos para la generación de claves temporales (ej. AES-256-GCM para cifrado simétrico, RSA-OAEP para clave pública).
+
+Esquema de expiración y revocación de tokens.
+
+Implementación posible de Zero-Knowledge Proofs para validación reforzada.
+
+
+B. Modelos IA para Evaluación Contextual
+
+Tipos de datos recolectados para contexto:
+
+Identidad digital (firmas, wallets)
+
+Comportamiento (análisis de patrones, frecuencia de acceso)
+
+Geolocalización y dispositivo
+
+Reputación y riesgo
+
+
+Algoritmos ML sugeridos: clustering, redes neuronales, análisis de anomalías.
+
+
+C. Arquitectura de Red y SDN
+
+Descripción técnica de cómo usar SDN para crear lobbys virtuales.
+
+Ejemplos de herramientas: Istio, Calico, Kubernetes Namespaces.
+
+Mecanismos para aislamiento y microsegmentación.
+
+
+D. Blockchain y Registro Inmutable
+
+Uso de blockchain para auditoría: almacenamiento de logs de accesos, claves temporales y eventos.
+
+Tecnologías posibles: Ethereum privada, Hyperledger Fabric, IPFS para almacenamiento distribuido.
+
+
+
+
