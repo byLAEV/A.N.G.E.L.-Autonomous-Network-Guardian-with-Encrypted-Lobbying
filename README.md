@@ -156,5 +156,63 @@ Uso de blockchain para auditoría: almacenamiento de logs de accesos, claves tem
 Tecnologías posibles: Ethereum privada, Hyperledger Fabric, IPFS para almacenamiento distribuido.
 
 
+Diagrama de Flujo de Operación — A.N.G.E.L.
+
+Descripción paso a paso:
+
+flowchart TD
+    A[Inicio: Solicitud de acceso (usuario/dispositivo)] --> B[Ingreso a Lobby Digital]
+    B --> C[IA Fragmentation Engine: Evalúa contexto]
+    C --> D{¿Validación exitosa?}
+    D -- Sí --> E[Genera Clave Temporal Cifrada]
+    E --> F[Acceso Condicional a Fragmentos]
+    F --> G[Reensamblaje de Datos/Servicios]
+    G --> H[Operación dentro de permisos temporales]
+    H --> I{¿Clave expirada o revocada?}
+    I -- Sí --> J[Revocación de acceso y cierre de sesión]
+    I -- No --> H
+    D -- No --> K[Acceso denegado y monitoreo de evento]
+    K --> L[Registro y alerta en blockchain / auditoría]
+    J --> L
+
+
+---
+
+Explicación técnica:
+
+1. Inicio: Un usuario o dispositivo realiza una solicitud para acceder a un recurso o servicio dentro de la red.
+
+
+2. Ingreso a Lobby Digital: La solicitud es dirigida a un lobby virtual aislado, una microzona sin conexión directa con otros lobbys.
+
+
+3. Evaluación Contextual IA: El motor de IA analiza múltiples factores del solicitante (firma digital, geolocalización, comportamiento histórico, reputación) usando modelos de ML para determinar riesgo y legitimidad.
+
+
+4. Decisión de Validación:
+
+Si la evaluación es exitosa, se procede a generar una clave temporal cifrada, única y con tiempo limitado.
+
+Si falla, el acceso es denegado y el evento es registrado para análisis.
+
+
+
+5. Generación de Clave Temporal: Un token criptográfico que solo funciona dentro de parámetros definidos (duración, ámbito, tipo de acceso).
+
+
+6. Acceso Condicional: Se permite acceso restringido a los fragmentos específicos del recurso o servicio solicitado.
+
+
+7. Reensamblaje: Los fragmentos aislados se recomponen en la capa lógica solo mientras la clave esté activa y validada.
+
+
+8. Operación: El usuario opera dentro de los permisos temporales otorgados.
+
+
+9. Expiración o Revocación: Cuando la clave expira o se revoca (por actividad sospechosa o finalización), el acceso se cierra inmediatamente.
+
+
+10. Registro y Auditoría: Todos los eventos de acceso, generación y revocación de claves se registran en una blockchain o sistema inmutable para auditoría.
+
 
 
